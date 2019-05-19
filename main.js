@@ -1,11 +1,8 @@
 var prnt = '';
 var println = function (a) {
-  prnt += a;
-  prnt += "<br>";
+  document.writeln(a);
 };
-var printAll = function () {
-  document.write(prnt);
-};
+var printAll = function() {};
 
 var src = document.location.toString().split("?url=")[1];
 if (!src || src === '') {
